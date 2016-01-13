@@ -19,7 +19,7 @@ def download_data(filename=filename):
 	The created file is in a CSV format, with columns:
 		pl_hostname    : Host star name 
 		pl_letter 	   : planet letter within system
-		pl_orbsmax 	   : orbital semi-major axis of planet (AU)
+		pl_orbsmax 	   : orbital semi-major axis of planet (in units of AU)
 		pl_orbsmaxerr1 : upper uncertainty in semi-major axis
 		pl_orbsmaxerr2 : lower uncertainty in semi-major axis
 		pl_bmassj      : planet mass (Jupiter masses)
@@ -97,13 +97,13 @@ def parse_data(filename=filename):
 			pl_letter : bytestring
 				Letter specifying which planet within system
 			pl_orbsmax : float
-				orbital semi-major axis of planet
+				orbital semi-major axis of planet (in units of AU)
 			pl_orbsmaxerr1 : float:
 				upper limit = pl_orbsmax + pl_orbsmaxerr1
 			pl_orbsmaxerr2 : float:
 				lower limit = pl_orbsmax + pl_orbsmaxerr2
 			pl_bmassj : float
-				planet mass (Jupiter mass)
+				planet mass (in units of Jupiter masses)
 			pl_bmassjerr1 : float:
 				upper limit = pl_bmassj + pl_bmassjerr1
 			pl_bmassjerr2 : float:
