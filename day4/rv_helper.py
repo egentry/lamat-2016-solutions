@@ -6,7 +6,7 @@ def time_to_theta(t, t_0, P, e):
 	"""
 	Converts time into true anomaly (theta in our conventions)
 
-	This requires numerical root finding (see scipy.optimize.newton)
+	This requires numerical root finding (see scipy.optimize.brentq)
 
 	Parameters
 	----------
