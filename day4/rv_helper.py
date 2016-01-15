@@ -11,11 +11,11 @@ def time_to_theta(t, t_0, P, e):
 	Parameters
 	----------
 	t : float
-		Current time [seconds]
+		Current time
 	t_0 : float
-		reference time [seconds]
+		reference time
 	P : float
-		Orbital period [seconds]
+		Orbital period
 	e : float
 		Orbital eccentricity
 
@@ -23,6 +23,11 @@ def time_to_theta(t, t_0, P, e):
 	-------
 	theta : float
 		Mean anomaly
+	
+	Notes
+	-----
+	The units of `t`, `t_0` and `P` don't matter, 
+	*as long as you use the same units for each!*
 	"""
 
 	# first solve for eccentric anomaly (eta)
